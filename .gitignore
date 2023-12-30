@@ -161,3 +161,6 @@ cython_debug/
 
 #config files
 *.ini
+
+#system files
+.DS_Store
