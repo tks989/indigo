@@ -1,0 +1,21 @@
+{"machines":[
+		{
+		"name":"pi_navio",
+		"type":"sensor",
+		"location":"manufacturing_floor",
+		"status":"active"
+		},
+		{
+		"name":"pi_mill",
+		"type":"sensor",
+		"location":"manufacturing_floor",
+		"status":"idle"	
+		},
+		{
+		"name":"pi_small_mill",
+		"type":"actuator",
+		"location":"remote_lab",
+		"status":"online"	
+		}
+	]
+}
