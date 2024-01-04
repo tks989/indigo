@@ -29,7 +29,11 @@ f.close()
 
 #convert to pandas
 df = pd.DataFrame.from_dict(data['machines'])
-
 engine = create_engine(f'postgresql://{user}:{password}@{host}:{port}/{database}')
 df.to_sql('machines', engine, if_exists='replace')
+print("Successfully refreshed \"machines\" data")
 
+df = pd.DataFrame.from_dict(data['jobs'])
+engine = create_engine(f'postgresql://{user}:{password}@{host}:{port}/{database}')
+df.to_sql('jobs', engine, if_exists='replace')
+print("Successfully refreshed \"jobs\" data")

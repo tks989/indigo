@@ -1,4 +1,5 @@
-{"machines":[
+{
+	"machines":[
 		{
 		"name":"pi_navio",
 		"type":"sensor",
@@ -6,7 +7,7 @@
 		"status":"active"
 		},
 		{
-		"name":"pi_mill",
+		"name":"pi_large_mill",
 		"type":"sensor",
 		"location":"manufacturing_floor",
 		"status":"idle"	
@@ -16,6 +17,36 @@
 		"type":"actuator",
 		"location":"remote_lab",
 		"status":"online"	
+		}
+	],
+	"jobs":[
+		{
+		"job_id": 1,
+		"name":"pi_navio",
+		"due":"02/10/2024",
+		"part_no":"12345",
+		"customer":"2M Manufacturing"
+		},
+		{
+		"job_id": 2,
+		"name":"pi_navio",
+		"due":"05/10/2024",
+		"part_no":"23467",
+		"customer":"Shick Tube-Veyor"
+		},
+		{
+		"job_id": 3,
+		"name":"pi_large_mill",
+		"due":"03/10/2024",
+		"part_no":"23467",
+		"customer":"Shick Tube-Veyor"
+		},
+		{
+		"job_id": 4,
+		"name":"pi_small_mill",
+		"due":"02/22/2024",
+		"part_no":"891011",
+		"customer":"Accessible Technologies"
 		}
 	]
 }
